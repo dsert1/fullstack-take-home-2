@@ -5,6 +5,6 @@ from ..s3 import sign_get_url
 
 router = APIRouter(prefix="/ping", tags=["ping"])
 
-@router.get("/", response_model=None)
+@router.get("", response_model=None)
 def ping():
   return {"status": "ok"}
