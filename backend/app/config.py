@@ -18,7 +18,7 @@ class Settings(BaseSettings):
   aws_region: str = "us-east-1"
   s3_bucket: str = "cashmere-portfolio-media"
   dynamo_table: str = "cashmere_portfolios"
-  cors_origins: List[str] = ["http://localhost:3000"]
+  cors_origins: List[str] = ["http://localhost:3000", "https://cashmere-take-home-api.com"]
 
   model_config = SettingsConfigDict(env_file=".env", extra="ignore")  # ignore stray keys
 
